@@ -2,6 +2,15 @@ apply plugin: "com.android.application"
 apply plugin: "org.jetbrains.kotlin.android"
 apply plugin: "com.facebook.react"
 
+// react-native-config
+project.ext.defaultEnvFile = "../config/clients/base/.env.base.dev"
+
+project.ext.envConfigFiles = [
+   basedev: "../config/clients/base/.env.base.dev",
+]
+
+apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
+
 /**
  * This is the configuration block to customize your React Native Android app.
  * By default you don't need to apply any configuration, just uncomment the lines you need.
@@ -79,7 +88,7 @@ android {
 
     namespace "com.reactnativeconfigtutorial"
     defaultConfig {
-        applicationId "com.reactnativeconfigtutorial"
+        applicationId project.env.get("APP_BUNDLE_ID")
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
@@ -91,6 +100,19 @@ android {
             storePassword 'android'
             keyAlias 'androiddebugkey'
             keyPassword 'android'
+        }
+    }
+    flavorDimensions "client", "environment"
+    productFlavors {
+        // CLIENTS
+        base {
+            dimension "client"
+        }
+
+
+        // ENVIRONMENTS
+        dev {
+            dimension "environment"
         }
     }
     buildTypes {
@@ -105,6 +127,7 @@ android {
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
     }
+    
 }
 
 dependencies {
