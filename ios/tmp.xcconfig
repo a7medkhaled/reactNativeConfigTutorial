@@ -1,8 +1,8 @@
 CLIENT=coffe
-ENVIRONMENT=prod
-APP_BUNDLE_ID=com.asoftwarefactory.coffe.app.prod
+ENVIRONMENT=dev
+APP_BUNDLE_ID=com.asoftwarefactory.coffe.app.dev
 APP_VERSION=0.39.0
-APP_NAME=coffe Prod
+APP_NAME=coffe DEV
 APP_IOS_LAUNCH_SCREEN=CoffeSplash
 APP_IOS_ASSETS_FILE=CoffeAssets.xcassets
 APP_IOS_ICON=CoffeAppIcon

@@ -9,17 +9,19 @@
 /* Begin PBXBuildFile section */
 		0C80B921A6F3F58F76C31292 /* libPods-reactNativeConfigTutorial.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-reactNativeConfigTutorial.a */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		23A0DD0C9F324089AFBB6EEB /* CoffeSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 851DBFD539DD44D682F74051 /* CoffeSplash.storyboard */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
+		8014314484524768858574D6 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07AC7D3402FE4E7596C2DFD3 /* Colors.xcassets */; };
 		841B61E42DAC3DBF00C77B43 /* BaseAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841B61E32DAC3DBF00C77B43 /* BaseAssets.xcassets */; };
 		841B61E62DAED73E00C77B43 /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841B61E52DAED73E00C77B43 /* BootSplash.storyboard */; };
 		841B61EA2DAED8FB00C77B43 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841B61E92DAED8FB00C77B43 /* Colors.xcassets */; };
 		841B621A2DB04B3600C77B43 /* CoffeAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841B62192DB04B3600C77B43 /* CoffeAssets.xcassets */; };
-		841B621C2DB04B9300C77B43 /* CoffeSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841B621B2DB04B9300C77B43 /* CoffeSplash.storyboard */; };
 		841B621E2DB04B9A00C77B43 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841B621D2DB04B9A00C77B43 /* Colors.xcassets */; };
 		AEFFE76D1D8C35DC47623CFD /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07AC7D3402FE4E7596C2DFD3 /* Colors.xcassets */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = folder.assetcatalog; name = Colors.xcassets; path = reactNativeConfigTutorial/Colors.xcassets; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* reactNativeConfigTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reactNativeConfigTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = reactNativeConfigTutorial/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = reactNativeConfigTutorial/Info.plist; sourceTree = "<group>"; };
@@ -33,8 +35,8 @@
 		841B61E52DAED73E00C77B43 /* BootSplash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = BootSplash.storyboard; path = BaseAssets.xcassets/BootSplash.storyboard; sourceTree = "<group>"; };
 		841B61E92DAED8FB00C77B43 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		841B62192DB04B3600C77B43 /* CoffeAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CoffeAssets.xcassets; sourceTree = "<group>"; };
-		841B621B2DB04B9300C77B43 /* CoffeSplash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoffeSplash.storyboard; sourceTree = "<group>"; };
 		841B621D2DB04B9A00C77B43 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		851DBFD539DD44D682F74051 /* CoffeSplash.storyboard */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = file.storyboard; name = CoffeSplash.storyboard; path = ../../../CoffeSplash.storyboard; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -58,6 +60,7 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
 				841B61DD2DAC3CB500C77B43 /* Config */,
+				07AC7D3402FE4E7596C2DFD3 /* Colors.xcassets */,
 			);
 			name = reactNativeConfigTutorial;
 			sourceTree = "<group>";
@@ -133,7 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				841B621D2DB04B9A00C77B43 /* Colors.xcassets */,
-				841B621B2DB04B9300C77B43 /* CoffeSplash.storyboard */,
+				851DBFD539DD44D682F74051 /* CoffeSplash.storyboard */,
 				841B62192DB04B3600C77B43 /* CoffeAssets.xcassets */,
 			);
 			path = Coffe;
@@ -215,7 +218,8 @@
 				841B61E42DAC3DBF00C77B43 /* BaseAssets.xcassets in Resources */,
 				841B621E2DB04B9A00C77B43 /* Colors.xcassets in Resources */,
 				AEFFE76D1D8C35DC47623CFD /* PrivacyInfo.xcprivacy in Resources */,
-				841B621C2DB04B9300C77B43 /* CoffeSplash.storyboard in Resources */,
+				23A0DD0C9F324089AFBB6EEB /* CoffeSplash.storyboard in Resources */,
+				8014314484524768858574D6 /* Colors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
