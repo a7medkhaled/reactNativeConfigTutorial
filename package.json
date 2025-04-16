@@ -9,6 +9,7 @@
     "start": "react-native start",
     "test": "jest",
     "run-android:base:dev": "react-native run-android --mode=baseDevDebug --appId com.asoftwarefactory.store.app.dev",
+    "run-android:base:prod": "react-native run-android --mode=baseProdDebug --appId com.asoftwarefactory.store.app.prod",
     "run-ios:base:dev": "react-native run-ios --scheme \"base dev\""
   },
   "dependencies": {
