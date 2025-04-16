@@ -10,8 +10,9 @@
 		0C80B921A6F3F58F76C31292 /* libPods-reactNativeConfigTutorial.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-reactNativeConfigTutorial.a */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		841B61E42DAC3DBF00C77B43 /* BaseAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841B61E32DAC3DBF00C77B43 /* BaseAssets.xcassets */; };
+		841B61E62DAED73E00C77B43 /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841B61E52DAED73E00C77B43 /* BootSplash.storyboard */; };
+		841B61EA2DAED8FB00C77B43 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841B61E92DAED8FB00C77B43 /* Colors.xcassets */; };
 		AEFFE76D1D8C35DC47623CFD /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 /* End PBXBuildFile section */
 
@@ -24,9 +25,10 @@
 		5709B34CF0A7D63546082F79 /* Pods-reactNativeConfigTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactNativeConfigTutorial.release.xcconfig"; path = "Target Support Files/Pods-reactNativeConfigTutorial/Pods-reactNativeConfigTutorial.release.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-reactNativeConfigTutorial.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reactNativeConfigTutorial.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = reactNativeConfigTutorial/AppDelegate.swift; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = reactNativeConfigTutorial/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		841B61DC2DAACD8B00C77B43 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		841B61E32DAC3DBF00C77B43 /* BaseAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = BaseAssets.xcassets; sourceTree = "<group>"; };
+		841B61E52DAED73E00C77B43 /* BootSplash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = BootSplash.storyboard; path = BaseAssets.xcassets/BootSplash.storyboard; sourceTree = "<group>"; };
+		841B61E92DAED8FB00C77B43 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -45,12 +47,11 @@
 		13B07FAE1A68108700A75B9A /* reactNativeConfigTutorial */ = {
 			isa = PBXGroup;
 			children = (
-				841B61DD2DAC3CB500C77B43 /* Config */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				761780EC2CA45674006654EE /* AppDelegate.swift */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
-				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
+				841B61DD2DAC3CB500C77B43 /* Config */,
 			);
 			name = reactNativeConfigTutorial;
 			sourceTree = "<group>";
@@ -99,7 +100,8 @@
 				841B61DE2DAC3D0600C77B43 /* Clients */,
 				841B61DC2DAACD8B00C77B43 /* Config.xcconfig */,
 			);
-			path = Config;
+			name = Config;
+			path = reactNativeConfigTutorial/Config;
 			sourceTree = "<group>";
 		};
 		841B61DE2DAC3D0600C77B43 /* Clients */ = {
@@ -113,6 +115,8 @@
 		841B61E22DAC3D6900C77B43 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				841B61E92DAED8FB00C77B43 /* Colors.xcassets */,
+				841B61E52DAED73E00C77B43 /* BootSplash.storyboard */,
 				841B61E32DAC3DBF00C77B43 /* BaseAssets.xcassets */,
 			);
 			path = Base;
@@ -187,7 +191,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				841B61EA2DAED8FB00C77B43 /* Colors.xcassets in Resources */,
+				841B61E62DAED73E00C77B43 /* BootSplash.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				841B61E42DAC3DBF00C77B43 /* BaseAssets.xcassets in Resources */,
 				AEFFE76D1D8C35DC47623CFD /* PrivacyInfo.xcprivacy in Resources */,
@@ -299,6 +304,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
+				INCLUDED_SOURCE_FILE_NAMES = "$(APP_IOS_ASSETS_FILE)";
 				INFOPLIST_FILE = reactNativeConfigTutorial/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -326,6 +332,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				INCLUDED_SOURCE_FILE_NAMES = "$(APP_IOS_ASSETS_FILE)";
 				INFOPLIST_FILE = reactNativeConfigTutorial/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (

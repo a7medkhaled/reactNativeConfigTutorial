@@ -95,3 +95,12 @@ To learn more about React Native, take a look at the following resources:
 - [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
 - [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
 - [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+
+# splash screen
+
+npx react-native generate-bootsplash assets/splash_logo.png \
+ --logo-width=100 \
+
+this will generate the assets to the folder called assets
+
+copy them to the right place after that

@@ -3,3 +3,5 @@ ENVIRONMENT=dev
 APP_BUNDLE_ID=com.asoftwarefactory.store.app.dev
 APP_VERSION=0.39.0
 APP_NAME=store DEV
+APP_IOS_LAUNCH_SCREEN=BootSplash
+APP_IOS_ASSETS_FILE=BaseAssets.xcassets
