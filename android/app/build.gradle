@@ -8,6 +8,8 @@ project.ext.defaultEnvFile = "../config/clients/base/.env.base.dev"
 project.ext.envConfigFiles = [
    basedev: "../config/clients/base/.env.base.dev",
    baseprod: "../config/clients/base/.env.base.prod",
+   coffedev: "../config/clients/coffe/.env.coffe.dev",
+   coffeprod: "../config/clients/coffe/.env.coffe.prod",
 ]
 
 apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
@@ -107,6 +109,9 @@ android {
     productFlavors {
         // CLIENTS
         base {
+            dimension "client"
+        }
+        coffe {
             dimension "client"
         }
 

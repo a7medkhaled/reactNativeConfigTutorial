@@ -104,3 +104,19 @@ npx react-native generate-bootsplash assets/splash_logo.png \
 this will generate the assets to the folder called assets
 
 copy them to the right place after that
+
+## in order to add new client
+
+# Android
+
+- add new folder like coffe in the config clients
+- add the env files
+- in build.gradle add the new client and the envConfigFiles
+- create new folder in the android app src and the resources for the new client
+
+# ios
+
+- add new schema from the xcode and change the path of the env file
+- add new folder in the config in the ios folder
+- add the assets with good names
+- change the names for ios app icon and splash screens in the env file

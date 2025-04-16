@@ -13,6 +13,9 @@
 		841B61E42DAC3DBF00C77B43 /* BaseAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841B61E32DAC3DBF00C77B43 /* BaseAssets.xcassets */; };
 		841B61E62DAED73E00C77B43 /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841B61E52DAED73E00C77B43 /* BootSplash.storyboard */; };
 		841B61EA2DAED8FB00C77B43 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841B61E92DAED8FB00C77B43 /* Colors.xcassets */; };
+		841B621A2DB04B3600C77B43 /* CoffeAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841B62192DB04B3600C77B43 /* CoffeAssets.xcassets */; };
+		841B621C2DB04B9300C77B43 /* CoffeSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841B621B2DB04B9300C77B43 /* CoffeSplash.storyboard */; };
+		841B621E2DB04B9A00C77B43 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841B621D2DB04B9A00C77B43 /* Colors.xcassets */; };
 		AEFFE76D1D8C35DC47623CFD /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +32,9 @@
 		841B61E32DAC3DBF00C77B43 /* BaseAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = BaseAssets.xcassets; sourceTree = "<group>"; };
 		841B61E52DAED73E00C77B43 /* BootSplash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = BootSplash.storyboard; path = BaseAssets.xcassets/BootSplash.storyboard; sourceTree = "<group>"; };
 		841B61E92DAED8FB00C77B43 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		841B62192DB04B3600C77B43 /* CoffeAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CoffeAssets.xcassets; sourceTree = "<group>"; };
+		841B621B2DB04B9300C77B43 /* CoffeSplash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoffeSplash.storyboard; sourceTree = "<group>"; };
+		841B621D2DB04B9A00C77B43 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -107,6 +113,7 @@
 		841B61DE2DAC3D0600C77B43 /* Clients */ = {
 			isa = PBXGroup;
 			children = (
+				841B62022DB04AE000C77B43 /* Coffe */,
 				841B61E22DAC3D6900C77B43 /* Base */,
 			);
 			path = Clients;
@@ -120,6 +127,16 @@
 				841B61E32DAC3DBF00C77B43 /* BaseAssets.xcassets */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		841B62022DB04AE000C77B43 /* Coffe */ = {
+			isa = PBXGroup;
+			children = (
+				841B621D2DB04B9A00C77B43 /* Colors.xcassets */,
+				841B621B2DB04B9300C77B43 /* CoffeSplash.storyboard */,
+				841B62192DB04B3600C77B43 /* CoffeAssets.xcassets */,
+			);
+			path = Coffe;
 			sourceTree = "<group>";
 		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
@@ -194,8 +211,11 @@
 				841B61EA2DAED8FB00C77B43 /* Colors.xcassets in Resources */,
 				841B61E62DAED73E00C77B43 /* BootSplash.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				841B621A2DB04B3600C77B43 /* CoffeAssets.xcassets in Resources */,
 				841B61E42DAC3DBF00C77B43 /* BaseAssets.xcassets in Resources */,
+				841B621E2DB04B9A00C77B43 /* Colors.xcassets in Resources */,
 				AEFFE76D1D8C35DC47623CFD /* PrivacyInfo.xcprivacy in Resources */,
+				841B621C2DB04B9300C77B43 /* CoffeSplash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +321,8 @@
 			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-reactNativeConfigTutorial.debug.xcconfig */;
 			buildSettings = {
 				APP_BUNDLE_ID = "$(APP_BUNDLE_ID)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "$(APP_IOS_ICON)";
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
@@ -331,7 +352,8 @@
 			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-reactNativeConfigTutorial.release.xcconfig */;
 			buildSettings = {
 				APP_BUNDLE_ID = "$(APP_BUNDLE_ID)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "$(APP_IOS_ICON)";
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				INCLUDED_SOURCE_FILE_NAMES = "$(APP_IOS_ASSETS_FILE)";
