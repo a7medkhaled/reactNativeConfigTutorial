@@ -1,5 +1,12 @@
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
+# what is this ?
+
+white label app
+we have 2 clients base and coffe and for each we have 2 environments dev and prod
+we used library react-native-config
+for each client we have changed the app name, app icon, splash screen and some other variables.
+
 # Getting Started
 
 > **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
